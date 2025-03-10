@@ -53,8 +53,8 @@ Ensure your **Tachyon** or **Raspberry Pi** device is:
 ### **2. Clone & Initialize the Submodules**
 Since this repo includes a submodule, use:
 ```sh
-git clone --recurse-submodules https://github.com/quic/ai-hub-models.git
-cd ai-hub
+git clone --recurse-submodules https://github.com/particle-iot/blueprint-ai-hub-models.git
+cd blueprint-ai-hub-models
 ```
 
 If you've already cloned the repository but forgot the submodule, run:
@@ -70,7 +70,7 @@ docker-compose up --build
 
 To run a specific model:
 ```sh
-docker run --rm edge/ai-hub-models --model <MODEL_NAME>
+particle app run
 ```
 
 For details on available models, refer to the [original AI Hub Models](https://github.com/quic/ai-hub-models/tree/main/qai_hub_models/models).
