@@ -19,8 +19,7 @@ webIdeLink: https://go.particle.io/shared_apps/6761f677ca3d870509cd4384
 webSetupLink: part.cl/setup-tachyon
 hardwareDependencies:
   - name: Supported device
-containers:
-  - name: edge/ai-hub-models
+containers: ai-hub
 introduction: |
   Welcome to the **Qualcomm AI Hub Models Blueprint App** for Particle! 
 

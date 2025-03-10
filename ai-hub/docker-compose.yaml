@@ -1,9 +1,6 @@
-version: "3.8"
-
 services:
   yolo-inference:
     build: .
-    container_name: yolo_model
     volumes:
       - ./images:/app/images  # Mount local images folder to container
       - ./output:/app/output  # Mount output
