@@ -1,31 +1,39 @@
-slug: particle-hello-world-node
+slug: qualcomm-ai-hub-models
 type: Tutorial
-category: "Getting started"
-expertiseLevel: "Beginner"
-tags: ["Application"]
-icon: assets/hello-world.svg
-gitrepo: https://github.com/particle-iot/blueprint-hello-world-node
-name: "Hello, World Node"
-shortDescription: The classic application, now running on your Linux device using Node!
+category: "AI & Machine Learning"
+expertiseLevel: "Intermediate"
+tags: ["AI", "Machine Learning", "Docker", "Edge AI"]
+icon: assets/ai-hub.svg
+gitrepo: https://github.com/quic/ai-hub-models
+name: "Qualcomm AI Hub Models"
+shortDescription: Run AI models from Qualcomm's AI Hub on your Linux device using Particle's IoT platform.
 version: 1.0.0
 models: []
-language: [ "Node.js" ]
+language: ["Python", "Docker"]
 cloudServices:
 integrations: []
 supportedDevices:
   - name: Tachyon
-  - name: Rasberry Pi
+  - name: Raspberry Pi
 webIdeLink: https://go.particle.io/shared_apps/6761f677ca3d870509cd4384
 webSetupLink: part.cl/setup-tachyon
 hardwareDependencies:
   - name: Supported device
 containers:
-  - name: edge/hello-world-node
+  - name: edge/ai-hub-models
 introduction: |
-  Welcome to the **Hello World Linux Blueprint App** for Particle! 
+  Welcome to the **Qualcomm AI Hub Models Blueprint App** for Particle! 
+
+  This blueprint enables seamless execution of AI models from Qualcomm’s AI Hub on your Linux-based edge device. By leveraging Particle’s IoT platform, you can dynamically download and run AI models inside a Docker container with minimal setup.
 
 description: |
-  The Hello World blueprint for Linux is here
+  The Qualcomm AI Hub Models blueprint allows you to deploy and execute AI models from the Qualcomm AI Hub repository on supported edge devices like Tachyon and Raspberry Pi. 
+  - Uses Docker to containerize and execute AI models.
+  - Supports running models dynamically by fetching them from the AI Hub repository.
+  - Integrated with PartiQL’s IoT platform for seamless model execution and deployment.
+  
+  This is an ideal starting point for AI-powered applications running at the edge.
 
 additionalResources:
+  - [Qualcomm AI Hub Models Repository](https://github.com/quic/ai-hub-models)
   - [Tachyon Edge AI Overview](https://particle.io/tachyon)

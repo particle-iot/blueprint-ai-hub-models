@@ -1,9 +1,10 @@
 version: "3.8"
 
 services:
-  hello-world-node:
-    container_name: hello-world-node
+  yolo-inference:
     build: .
-    ports:
-      - "8080:8080"
-    restart: always
+    container_name: yolo_model
+    volumes:
+      - ./images:/app/images  # Mount local images folder to container
+      - ./output:/app/output  # Mount output
+    command: ["--image", "images/fish.jpg"]  # Default image to process
