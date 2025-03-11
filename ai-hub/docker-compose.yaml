@@ -1,7 +1,20 @@
 services:
-  yolo-inference:
+  ai-hub-models:
     build: .
     volumes:
       - ./images:/app/images  # Mount local images folder to container
       - ./output:/app/output  # Mount output
-    command: ["--image", "images/fish.jpg"]  # Default image to process
+      - "/tmp/.X11-unix:/tmp/.X11-unix"  # Allows OpenCV GUI to render on host screen
+    devices:
+      - "/dev/video0:/dev/video0"
+      - "/dev/video1:/dev/video1"
+      - "/dev/video1:/dev/video2"
+      - "/dev/video1:/dev/video3"
+    device_cgroup_rules:
+      - 'c 81:* rmw'  # Grants read/modify/write for all video devices
+    env_file:
+      - .env  
+    environment:
+      - DISPLAY_FRAMES=1
+      - DISPLAY=${DISPLAY}  # Pass host display      
+    privileged: true
