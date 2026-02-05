@@ -1,16 +1,16 @@
 slug: qualcomm-ai-hub-models
 type: Tutorial
-category: "AI & Machine Learning"
+category: "AI and machine learning"
 expertiseLevel: "Intermediate"
-tags: ["AI", "Machine Learning", "Docker", "Edge AI"]
+tags: ["AI/ML", "Containers"]
 icon: assets/ai-hub.svg
 gitrepo: https://github.com/quic/ai-hub-models
 name: "Qualcomm AI Hub Models"
 shortDescription: Run AI models from Qualcomm's AI Hub on your Linux device using Particle's IoT platform.
 version: 1.0.0
 models: []
-language: ["Python", "Docker"]
-cloudServices:
+language: ["Python"]
+cloudServices: ["Qualcomm AI Hub"]
 integrations: []
 supportedDevices:
   - name: Tachyon
