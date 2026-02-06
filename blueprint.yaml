@@ -34,5 +34,7 @@ description: |
   This is an ideal starting point for AI-powered applications running at the edge.
 
 additionalResources:
-  - [Qualcomm AI Hub Models Repository](https://github.com/quic/ai-hub-models)
-  - [Tachyon Edge AI Overview](https://particle.io/tachyon)
+  - title: Qualcomm AI Hub Models Repository
+    link: https://github.com/quic/ai-hub-models
+  - title: Tachyon Edge AI Overview
+    link: https://particle.io/tachyon
